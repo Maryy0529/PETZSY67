@@ -1265,3 +1265,1532 @@ footer{
 
 }
  
+/* ==========================================================
+   PETSZY - HOME
+   ESTILO Y2K AZUL
+   ========================================================== */
+
+
+/* ==========================================================
+   CONFIGURAÇÃO GERAL
+   ========================================================== */
+
+body.home {
+    margin: 0;
+    padding: 0;
+
+    overflow-x: hidden;
+
+    background: #a9ddff;
+
+    color: #123b61;
+
+    font-family: 'Poppins', sans-serif;
+}
+
+
+/* ==========================================================
+   NAVBAR
+   ========================================================== */
+
+body.home .home-header {
+
+    width: calc(100% - 40px);
+    height: 72px;
+
+    position: fixed;
+
+    top: 20px;
+    left: 20px;
+
+    z-index: 1000;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 0 28px;
+
+    box-sizing: border-box;
+
+    background: #238ed1;
+
+    border: 3px solid #0d5e91;
+
+    border-radius: 25px;
+
+    box-shadow:
+        0 7px 0 #0d5e91,
+        0 12px 25px rgba(20, 82, 125, 0.25);
+}
+
+
+/* LOGO */
+
+body.home .home-header .logo {
+
+    color: #ffffff;
+
+    font-family: 'Fascinate Inline', cursive;
+
+    font-size: 42px;
+
+    text-decoration: none;
+
+    text-shadow:
+        3px 3px 0 #0d5e91;
+
+    transition: 0.2s;
+}
+
+
+body.home .home-header .logo:hover {
+
+    transform: rotate(-2deg) scale(1.05);
+}
+
+
+/* MENU */
+
+body.home .home-header .nav {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 12px;
+}
+
+
+body.home .home-header .nav a {
+
+    padding: 10px 17px;
+
+    border-radius: 16px;
+
+    color: white;
+
+    text-decoration: none;
+
+    font-size: 15px;
+
+    font-weight: 600;
+
+    transition: 0.2s;
+}
+
+
+body.home .home-header .nav a:hover {
+
+    background: #79d7ff;
+
+    color: #075486;
+
+    transform: translateY(-2px);
+
+    box-shadow:
+        0 4px 0 #0d5e91;
+}
+
+
+/* ==========================================================
+   HERO
+   ========================================================== */
+
+body.home section.home {
+
+    min-height: 100vh;
+
+    position: relative;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    padding: 150px 30px 100px;
+
+    box-sizing: border-box;
+
+    overflow: hidden;
+
+    background:
+        linear-gradient(
+            180deg,
+            rgba(31, 151, 218, 0.82),
+            rgba(119, 205, 247, 0.86)
+        ),
+        url("img/pets-bg.jpg");
+
+    background-size: cover;
+
+    background-position: center;
+}
+
+
+/* BOLHAS DECORATIVAS */
+
+body.home section.home::before {
+
+    content: "";
+
+    width: 230px;
+    height: 230px;
+
+    position: absolute;
+
+    top: 110px;
+    left: -80px;
+
+    border-radius: 50%;
+
+    background: rgba(255, 255, 255, 0.16);
+
+    border: 3px solid rgba(255, 255, 255, 0.25);
+}
+
+
+body.home section.home::after {
+
+    content: "";
+
+    width: 170px;
+    height: 170px;
+
+    position: absolute;
+
+    right: -50px;
+    bottom: 80px;
+
+    border-radius: 50%;
+
+    background: rgba(255, 255, 255, 0.18);
+
+    border: 3px solid rgba(255, 255, 255, 0.25);
+}
+
+
+/* CONTEÚDO */
+
+body.home .home-content {
+
+    position: relative;
+
+    z-index: 5;
+
+    width: 100%;
+
+    max-width: 900px;
+
+    padding: 45px;
+
+    box-sizing: border-box;
+
+    text-align: center;
+
+    background: rgba(190, 232, 255, 0.82);
+
+    border: 4px solid #ffffff;
+
+    border-radius: 40px;
+
+    box-shadow:
+        0 10px 0 #12669a,
+        0 18px 35px rgba(19, 82, 120, 0.25);
+
+    backdrop-filter: blur(5px);
+}
+
+
+/* PEQUENO TEXTO */
+
+body.home .home-subtitulo {
+
+    display: inline-block;
+
+    margin-bottom: 15px;
+
+    padding: 8px 18px;
+
+    background: #075f96;
+
+    border: 3px solid #ffffff;
+
+    border-radius: 20px;
+
+    color: white;
+
+    font-size: 12px;
+
+    font-weight: 700;
+
+    letter-spacing: 2px;
+
+    box-shadow:
+        0 4px 0 #0a456b;
+}
+
+
+/* TÍTULO */
+
+body.home .home-content h1 {
+
+    margin: 0 0 20px;
+
+    color: #075486;
+
+    font-size: clamp(40px, 6vw, 65px);
+
+    font-weight: 800;
+
+    line-height: 1.05;
+
+    text-shadow:
+        3px 3px 0 #ffffff;
+}
+
+
+/* TEXTO */
+
+body.home .home-content p {
+
+    max-width: 760px;
+
+    margin: 0 auto 13px;
+
+    color: #164d73;
+
+    font-size: 16px;
+
+    line-height: 1.7;
+}
+
+
+/* ==========================================================
+   BOTÕES
+   ========================================================== */
+
+body.home .home-buttons {
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    gap: 15px;
+
+    margin-top: 25px;
+
+    flex-wrap: wrap;
+}
+
+
+body.home .btn-home {
+
+    display: inline-flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    min-width: 175px;
+
+    padding: 13px 24px;
+
+    box-sizing: border-box;
+
+    background: #0878ba;
+
+    border: 3px solid #ffffff;
+
+    border-radius: 18px;
+
+    color: white;
+
+    font-size: 15px;
+
+    font-weight: 700;
+
+    text-decoration: none;
+
+    box-shadow:
+        0 5px 0 #075486;
+
+    transition: 0.2s;
+}
+
+
+body.home .btn-home:hover {
+
+    transform: translateY(3px);
+
+    box-shadow:
+        0 2px 0 #075486;
+
+    background: #096ca3;
+}
+
+
+/* SEGUNDO BOTÃO */
+
+body.home .btn-secundario {
+
+    background: #75d7ff;
+
+    color: #075486;
+
+    border-color: #ffffff;
+}
+
+
+body.home .btn-secundario:hover {
+
+    background: #8de0ff;
+
+    color: #06466e;
+}
+
+
+/* ==========================================================
+   NOSSA HISTÓRIA
+   ========================================================== */
+
+body.home .historia {
+
+    position: relative;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    gap: 50px;
+
+    padding: 90px 8%;
+
+    box-sizing: border-box;
+
+    background: #8bd4f8;
+
+    border-top: 5px solid #0d6b9f;
+}
+
+
+/* TEXTO */
+
+body.home .historia-texto {
+
+    width: 55%;
+
+    max-width: 680px;
+}
+
+
+body.home .titulo-pequeno {
+
+    display: inline-block;
+
+    margin-bottom: 10px;
+
+    padding: 6px 14px;
+
+    background: #d5f3ff;
+
+    border: 2px solid #ffffff;
+
+    border-radius: 15px;
+
+    color: #075486;
+
+    font-size: 11px;
+
+    font-weight: 800;
+
+    letter-spacing: 1.5px;
+}
+
+
+body.home .historia-texto h2 {
+
+    margin: 0 0 20px;
+
+    color: #075486;
+
+    font-size: 42px;
+
+    font-weight: 800;
+
+    text-shadow:
+        2px 2px 0 #ffffff;
+}
+
+
+body.home .historia-texto p {
+
+    margin-bottom: 14px;
+
+    color: #174d6e;
+
+    font-size: 15px;
+
+    line-height: 1.8;
+}
+
+
+/* CARD */
+
+body.home .historia-destaque {
+
+    width: 340px;
+
+    min-height: 300px;
+
+    padding: 30px;
+
+    box-sizing: border-box;
+
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: center;
+
+    justify-content: center;
+
+    text-align: center;
+
+    background: #238ed1;
+
+    border: 4px solid white;
+
+    border-radius: 35px;
+
+    box-shadow:
+        0 8px 0 #0d5e91,
+        0 15px 25px rgba(17, 83, 124, 0.25);
+
+    transition: 0.25s;
+}
+
+
+body.home .historia-destaque:hover {
+
+    transform: rotate(-1deg) translateY(-5px);
+}
+
+
+/* CÍRCULO */
+
+body.home .patinha {
+
+    width: 75px;
+    height: 75px;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    margin-bottom: 18px;
+
+    background: #75d7ff;
+
+    border: 4px solid white;
+
+    border-radius: 50%;
+
+    color: #075486;
+
+    font-size: 24px;
+
+    font-weight: 800;
+
+    box-shadow:
+        0 5px 0 #075486;
+}
+
+
+body.home .historia-destaque h3 {
+
+    margin: 0 0 14px;
+
+    color: white;
+
+    font-size: 24px;
+
+    line-height: 1.3;
+}
+
+
+body.home .historia-destaque p {
+
+    margin: 0;
+
+    color: #d9f5ff;
+
+    font-size: 14px;
+
+    line-height: 1.6;
+}
+
+
+/* ==========================================================
+   MISSÃO
+   ========================================================== */
+
+body.home .missao {
+
+    padding: 90px 8%;
+
+    box-sizing: border-box;
+
+    background: #b7e5fb;
+
+    text-align: center;
+}
+
+
+body.home .titulo-secao {
+
+    max-width: 760px;
+
+    margin: 0 auto 45px;
+
+    text-align: center;
+}
+
+
+body.home .titulo-secao h2 {
+
+    margin: 0 0 15px;
+
+    color: #075486;
+
+    font-size: 40px;
+
+    font-weight: 800;
+
+    text-shadow:
+        2px 2px 0 white;
+}
+
+
+body.home .titulo-secao p {
+
+    color: #20516e;
+
+    font-size: 15px;
+
+    line-height: 1.7;
+}
+
+
+/* CARDS */
+
+body.home .cards-missao {
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(3, minmax(220px, 290px));
+
+    justify-content: center;
+
+    gap: 25px;
+}
+
+
+body.home .card-missao {
+
+    min-height: 290px;
+
+    padding: 30px 25px;
+
+    box-sizing: border-box;
+
+    background: #e3f7ff;
+
+    border: 4px solid #ffffff;
+
+    border-radius: 30px;
+
+    box-shadow:
+        0 7px 0 #4ca9d6,
+        0 12px 20px rgba(30, 105, 145, 0.16);
+
+    transition: 0.2s;
+}
+
+
+body.home .card-missao:hover {
+
+    transform: translateY(-6px) rotate(1deg);
+
+    box-shadow:
+        0 11px 0 #4ca9d6,
+        0 17px 25px rgba(30, 105, 145, 0.20);
+}
+
+
+/* ÍCONE */
+
+body.home .icone {
+
+    width: 70px;
+    height: 70px;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    margin: 0 auto 18px;
+
+    background: #6dd2fa;
+
+    border: 4px solid white;
+
+    border-radius: 22px;
+
+    color: #075486;
+
+    font-size: 22px;
+
+    font-weight: 800;
+
+    box-shadow:
+        0 5px 0 #2d8ebd;
+}
+
+
+body.home .card-missao h3 {
+
+    margin: 0 0 12px;
+
+    color: #075486;
+
+    font-size: 23px;
+}
+
+
+body.home .card-missao p {
+
+    color: #255672;
+
+    font-size: 14px;
+
+    line-height: 1.7;
+}
+
+
+/* ==========================================================
+   COMO AJUDAR
+   ========================================================== */
+
+body.home .como-ajudar {
+
+    padding: 90px 8%;
+
+    box-sizing: border-box;
+
+    background: #79c9ef;
+
+    text-align: center;
+
+    border-top: 5px solid #4ba8d4;
+}
+
+
+body.home .ajuda-cards {
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(3, minmax(220px, 300px));
+
+    justify-content: center;
+
+    gap: 25px;
+}
+
+
+body.home .ajuda-card {
+
+    padding: 32px 25px;
+
+    background: #ccefff;
+
+    border: 4px solid white;
+
+    border-radius: 30px;
+
+    box-shadow:
+        0 7px 0 #348db8;
+
+    transition: 0.2s;
+}
+
+
+body.home .ajuda-card:hover {
+
+    transform: translateY(-6px);
+}
+
+
+/* ÍCONE */
+
+body.home .ajuda-icone {
+
+    width: 65px;
+    height: 65px;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    margin: 0 auto 18px;
+
+    background: #66cdf4;
+
+    border: 4px solid white;
+
+    border-radius: 50%;
+
+    color: #075486;
+
+    font-size: 20px;
+
+    font-weight: 800;
+}
+
+
+body.home .ajuda-card h3 {
+
+    margin: 0 0 12px;
+
+    color: #075486;
+
+    font-size: 23px;
+}
+
+
+body.home .ajuda-card p {
+
+    margin-bottom: 20px;
+
+    color: #255672;
+
+    font-size: 14px;
+
+    line-height: 1.7;
+}
+
+
+body.home .ajuda-card a {
+
+    display: inline-block;
+
+    padding: 10px 20px;
+
+    background: #0878ba;
+
+    border: 3px solid white;
+
+    border-radius: 15px;
+
+    color: white;
+
+    font-size: 14px;
+
+    font-weight: 700;
+
+    text-decoration: none;
+
+    box-shadow:
+        0 4px 0 #075486;
+
+    transition: 0.2s;
+}
+
+
+body.home .ajuda-card a:hover {
+
+    transform: translateY(2px);
+
+    box-shadow:
+        0 2px 0 #075486;
+}
+
+
+/* ==========================================================
+   ADOÇÃO RESPONSÁVEL
+   ========================================================== */
+
+body.home .adocao-info {
+
+    padding: 90px 8%;
+
+    box-sizing: border-box;
+
+    background: #a6def8;
+
+    text-align: center;
+}
+
+
+body.home .adocao-conteudo {
+
+    max-width: 850px;
+
+    margin: 0 auto;
+
+    padding: 45px;
+
+    box-sizing: border-box;
+
+    background: #dff6ff;
+
+    border: 4px solid white;
+
+    border-radius: 40px;
+
+    box-shadow:
+        0 8px 0 #4a9fc7;
+}
+
+
+body.home .adocao-conteudo h2 {
+
+    margin: 0 0 20px;
+
+    color: #075486;
+
+    font-size: 39px;
+
+    font-weight: 800;
+
+    text-shadow:
+        2px 2px 0 white;
+}
+
+
+body.home .adocao-conteudo p {
+
+    margin-bottom: 14px;
+
+    color: #24556e;
+
+    font-size: 15px;
+
+    line-height: 1.8;
+}
+
+
+body.home .adocao-conteudo .btn-home {
+
+    margin-top: 18px;
+}
+
+
+/* ==========================================================
+   CUIDADOS
+   ========================================================== */
+
+body.home .cuidados {
+
+    padding: 90px 8%;
+
+    background: #bce9fc;
+
+    text-align: center;
+}
+
+
+body.home .cuidados-lista {
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(4, minmax(170px, 220px));
+
+    justify-content: center;
+
+    gap: 20px;
+}
+
+
+body.home .cuidado {
+
+    padding: 25px 18px;
+
+    background: #e5f8ff;
+
+    border: 4px solid white;
+
+    border-radius: 25px;
+
+    box-shadow:
+        0 6px 0 #5caed4;
+
+    transition: 0.2s;
+}
+
+
+body.home .cuidado:hover {
+
+    transform: translateY(-5px);
+}
+
+
+body.home .cuidado span {
+
+    display: block;
+
+    margin-bottom: 10px;
+
+    color: #0878ba;
+
+    font-size: 20px;
+
+    font-weight: 800;
+}
+
+
+body.home .cuidado h3 {
+
+    margin: 0 0 8px;
+
+    color: #075486;
+
+    font-size: 18px;
+}
+
+
+body.home .cuidado p {
+
+    color: #28576d;
+
+    font-size: 13px;
+
+    line-height: 1.6;
+}
+
+
+/* ==========================================================
+   CHAMADA FINAL
+   ========================================================== */
+
+body.home .chamada-home {
+
+    padding: 90px 25px;
+
+    background: #238ed1;
+
+    border-top: 5px solid #0d5e91;
+
+    text-align: center;
+}
+
+
+body.home .chamada-conteudo {
+
+    max-width: 800px;
+
+    margin: 0 auto;
+
+    padding: 45px 30px;
+
+    box-sizing: border-box;
+
+    background: #49b9e9;
+
+    border: 4px solid white;
+
+    border-radius: 40px;
+
+    box-shadow:
+        0 9px 0 #0d5e91;
+}
+
+
+body.home .patinha-final {
+
+    margin-bottom: 15px;
+
+    color: white;
+
+    font-family: 'Fascinate Inline', cursive;
+
+    font-size: 30px;
+
+    text-shadow:
+        2px 2px 0 #075486;
+}
+
+
+body.home .chamada-home h2 {
+
+    margin: 0 0 18px;
+
+    color: white;
+
+    font-size: 39px;
+
+    font-weight: 800;
+
+    line-height: 1.2;
+
+    text-shadow:
+        2px 2px 0 #075486;
+}
+
+
+body.home .chamada-home p {
+
+    max-width: 680px;
+
+    margin: 0 auto 25px;
+
+    color: #e7f9ff;
+
+    font-size: 15px;
+
+    line-height: 1.7;
+}
+
+
+/* BOTÃO FINAL */
+
+body.home .chamada-home .btn-home {
+
+    background: white;
+
+    border-color: white;
+
+    color: #075486;
+
+    box-shadow:
+        0 5px 0 #075486;
+}
+
+
+body.home .chamada-home .btn-home:hover {
+
+    background: #dff7ff;
+
+    color: #06466e;
+}
+
+
+/* SEGUNDO BOTÃO */
+
+body.home .chamada-home .btn-secundario {
+
+    background: #75d7ff;
+
+    border-color: white;
+
+    color: #075486;
+}
+
+
+/* ==========================================================
+   MENU HAMBÚRGUER
+   ========================================================== */
+
+body.home .home-header .menu-hamburguer {
+
+    display: none;
+}
+
+
+/* ==========================================================
+   RESPONSIVIDADE
+   ========================================================== */
+
+@media (max-width: 900px) {
+
+    body.home .home-header {
+
+        width: calc(100% - 30px);
+
+        left: 15px;
+
+        padding: 0 20px;
+    }
+
+
+    body.home .home-header .nav {
+
+        gap: 5px;
+    }
+
+
+    body.home .home-header .nav a {
+
+        padding: 9px 10px;
+
+        font-size: 13px;
+    }
+
+
+    body.home .historia {
+
+        gap: 30px;
+
+        padding: 70px 5%;
+    }
+
+
+    body.home .historia-texto {
+
+        width: 55%;
+    }
+
+
+    body.home .historia-destaque {
+
+        width: 300px;
+    }
+
+
+    body.home .cards-missao {
+
+        grid-template-columns:
+            repeat(2, minmax(220px, 290px));
+    }
+
+
+    body.home .ajuda-cards {
+
+        grid-template-columns:
+            repeat(2, minmax(220px, 300px));
+    }
+
+
+    body.home .cuidados-lista {
+
+        grid-template-columns:
+            repeat(2, minmax(180px, 230px));
+    }
+
+}
+
+
+/* ==========================================================
+   CELULAR
+   ========================================================== */
+
+@media (max-width: 700px) {
+
+    /* HEADER */
+
+    body.home .home-header {
+
+        height: 65px;
+
+        top: 12px;
+
+        width: calc(100% - 24px);
+
+        left: 12px;
+
+        border-radius: 20px;
+    }
+
+
+    body.home .home-header .logo {
+
+        font-size: 31px;
+    }
+
+
+    /* HAMBÚRGUER */
+
+    body.home .home-header .menu-hamburguer {
+
+        display: flex;
+
+        flex-direction: column;
+
+        gap: 5px;
+
+        cursor: pointer;
+    }
+
+
+    body.home .home-header .menu-hamburguer .linha {
+
+        width: 27px;
+
+        height: 3px;
+
+        background: white;
+
+        border-radius: 5px;
+    }
+
+
+    /* MENU */
+
+    body.home .home-header .nav {
+
+        display: none;
+
+        position: absolute;
+
+        top: 70px;
+
+        right: 0;
+
+        width: 210px;
+
+        padding: 10px;
+
+        flex-direction: column;
+
+        align-items: stretch;
+
+        gap: 3px;
+
+        background: #238ed1;
+
+        border: 3px solid white;
+
+        border-radius: 20px;
+
+        box-shadow:
+            0 6px 0 #0d5e91;
+    }
+
+
+    body.home .home-header .nav.ativo {
+
+        display: flex;
+    }
+
+
+    body.home .home-header .nav a {
+
+        padding: 12px;
+
+        font-size: 14px;
+    }
+
+
+    /* HERO */
+
+    body.home section.home {
+
+        padding: 115px 20px 70px;
+    }
+
+
+    body.home .home-content {
+
+        padding: 30px 20px;
+
+        border-radius: 30px;
+    }
+
+
+    body.home .home-subtitulo {
+
+        font-size: 9px;
+
+        letter-spacing: 1px;
+    }
+
+
+    body.home .home-content h1 {
+
+        font-size: 36px;
+    }
+
+
+    body.home .home-content p {
+
+        font-size: 14px;
+
+        line-height: 1.7;
+    }
+
+
+    /* BOTÕES */
+
+    body.home .home-buttons {
+
+        flex-direction: column;
+
+        gap: 12px;
+    }
+
+
+    body.home .btn-home {
+
+        width: 100%;
+
+        max-width: 280px;
+    }
+
+
+    /* HISTÓRIA */
+
+    body.home .historia {
+
+        flex-direction: column;
+
+        padding: 70px 20px;
+
+        text-align: center;
+    }
+
+
+    body.home .historia-texto {
+
+        width: 100%;
+    }
+
+
+    body.home .historia-texto h2 {
+
+        font-size: 34px;
+    }
+
+
+    body.home .historia-destaque {
+
+        width: 100%;
+
+        max-width: 340px;
+    }
+
+
+    /* TÍTULOS */
+
+    body.home .titulo-secao h2 {
+
+        font-size: 32px;
+    }
+
+
+    body.home .adocao-conteudo h2 {
+
+        font-size: 31px;
+    }
+
+
+    body.home .chamada-home h2 {
+
+        font-size: 30px;
+    }
+
+
+    /* CARDS */
+
+    body.home .cards-missao,
+    body.home .ajuda-cards,
+    body.home .cuidados-lista {
+
+        grid-template-columns: 1fr;
+    }
+
+
+    body.home .card-missao,
+    body.home .ajuda-card,
+    body.home .cuidado {
+
+        width: 100%;
+
+        max-width: 330px;
+
+        margin: 0 auto;
+    }
+
+
+    /* SEÇÕES */
+
+    body.home .missao,
+    body.home .como-ajudar,
+    body.home .cuidados {
+
+        padding: 70px 20px;
+    }
+
+
+    body.home .adocao-info {
+
+        padding: 70px 20px;
+    }
+
+
+    body.home .adocao-conteudo {
+
+        padding: 30px 20px;
+
+        border-radius: 30px;
+    }
+
+
+    body.home .chamada-conteudo {
+
+        padding: 35px 20px;
+
+        border-radius: 30px;
+    }
+
+}
+
+
+/* ==========================================================
+   CELULAR PEQUENO
+   ========================================================== */
+
+@media (max-width: 430px) {
+
+    body.home .home-header .logo {
+
+        font-size: 27px;
+    }
+
+
+    body.home .home-content h1 {
+
+        font-size: 31px;
+    }
+
+
+    body.home .home-content p {
+
+        font-size: 13px;
+    }
+
+
+    body.home .historia-texto h2 {
+
+        font-size: 29px;
+    }
+
+
+    body.home .titulo-secao h2 {
+
+        font-size: 28px;
+    }
+
+
+    body.home .adocao-conteudo h2 {
+
+        font-size: 28px;
+    }
+
+
+    body.home .chamada-home h2 {
+
+        font-size: 27px;
+    }
+
+}
