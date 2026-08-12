@@ -118,73 +118,315 @@ header{
 /* ===================================
    QUER ADOTAR
 =================================== */
+/* =========================================
+   QUER ADOTAR - PETSZY
+   COR PRINCIPAL: #b452f5
+========================================= */
 
-.adotar{
+
+/* FUNDO DA PÁGINA */
+
+body.adotar {
+
+    background-color: #b452f5;
+
     min-height: 100vh;
 
-    padding: 150px 8%;
-
-    background: linear-gradient(
-        135deg,
-        #b452f5,
-        #e2caf3
-    );
 }
 
-.adotar h2{
+
+/* =========================================
+   TÍTULO
+========================================= */
+
+.adotar > h2 {
+
     text-align: center;
-    font-size: 55px;
-    margin-bottom: 60px;
+
+    color: white;
+
+    font-size: 32px;
+
+    margin-top: 35px;
+
+    margin-bottom: 8px;
+
 }
 
-.cards{
+
+.texto-adocao {
+
+    text-align: center;
+
+    color: white;
+
+    font-size: 15px;
+
+    margin-bottom: 35px;
+
+}
+
+
+/* =========================================
+   GRID
+========================================= */
+
+.animais-container {
+    width: 1000px;
+    max-width: 90%;
+    margin: 0 auto;
+
     display: grid;
+    grid-template-columns: repeat(3, 1fr);
 
-    grid-template-columns:
-    repeat(auto-fit, minmax(280px, 1fr));
-
-    gap: 35px;
+    gap: 55px 80px;
 }
 
-.card{
-    background: rgba(255,255,255,0.12);
 
-    border-radius: 30px;
+/* =========================================
+   ANIMAL
+========================================= */
+
+.animal {
+    position: relative;
+
+    width: 260px;
+    height: 190px;
+}
+
+
+/* =========================================
+   FOTO PEQUENA
+========================================= */
+
+.foto {
+    width: 210px;
+    height: 170px;
 
     overflow: hidden;
 
-    transition: 0.4s;
+    border-radius: 15px;
 
-    backdrop-filter: blur(10px);
+    position: relative;
+    z-index: 2;
 
-    box-shadow: 0 15px 40px rgba(0,0,0,0.25);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.25);
+
+    border: 5px solid white;
 }
 
-.card:hover{
-    transform: translateY(-10px);
-}
 
-.card img{
+.foto img {
+
     width: 100%;
-    height: 280px;
+
+    height: 100%;
+
     object-fit: cover;
+
+    transition: transform 0.35s ease;
+
 }
 
-.card-content{
-    padding: 25px;
+
+/* PEQUENO ZOOM */
+
+.animal:hover .foto img {
+
+    transform: scale(1.08);
+
 }
 
-.card-content h3{
-    font-size: 28px;
-    margin-bottom: 10px;
+
+/* =========================================
+   POP-UP AO LADO
+========================================= */
+
+.popup {
+    position: absolute;
+
+    left: 130px;
+    top: -5px;
+
+    width: 205px;
+    min-height: 170px;
+
+    padding: 15px;
+
+    background-color: white;
+
+    border-radius: 12px;
+
+    box-shadow: 0 5px 20px rgba(0,0,0,0.25);
+
+    z-index: 3;
+
+    opacity: 0;
+    visibility: hidden;
+
+    transform: translateX(-15px);
+
+    transition: all 0.3s ease;
 }
 
-.card-content p{
-    font-size: 17px;
-    line-height: 1.6;
+
+/* APARECE AO PASSAR O MOUSE */
+
+.animal:hover .popup {
+
+    opacity: 1;
+
+    visibility: visible;
+
+    transform: translateX(45px);
+
 }
-.adotar-header{
-    background: linear-gradient(90deg, #4a3654);
+
+
+/* =========================================
+   NOME
+========================================= */
+
+.popup h3 {
+
+    color: #b452f5;
+
+    margin: 0 0 8px 0;
+
+    font-size: 21px;
+
+}
+
+
+/* =========================================
+   INFORMAÇÕES
+========================================= */
+
+.popup p {
+
+    color: #555;
+
+    font-size: 11px;
+
+    line-height: 1.35;
+
+    margin: 4px 0;
+
+}
+
+
+.popup strong {
+
+    color: #b452f5;
+
+}
+
+
+/* =========================================
+   BOTÃO
+========================================= */
+
+.popup button {
+
+    width: 100%;
+
+    border: none;
+
+    border-radius: 7px;
+
+    padding: 8px;
+
+    margin-top: 8px;
+
+    background-color: #b452f5;
+
+    color: white;
+
+    font-size: 10px;
+
+    font-weight: bold;
+
+    cursor: pointer;
+
+    transition: 0.2s ease;
+
+}
+
+
+.popup button:hover {
+
+    background-color: #9135d0;
+
+    transform: scale(1.03);
+
+}
+
+
+/* =========================================
+   CELULAR
+========================================= */
+@media (max-width: 700px) {
+
+    .animais-container {
+        width: 90%;
+
+        grid-template-columns: 1fr;
+
+        gap: 35px;
+    }
+
+    .animal {
+        margin: 0 auto;
+    }
+
+}
+
+
+    .animal {
+
+        margin: 0 auto;
+
+    }
+
+/* CABEÇALHO */
+.adotar-header {
+    background-color: #7d2bb8 !important;
+}
+
+/* FILTROS */
+.filtros {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    margin-bottom: 40px;
+}
+
+.filtro {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.filtro label {
+    color: white;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.filtro select {
+    padding: 9px 12px;
+    border: none;
+    border-radius: 8px;
+    background-color: white;
+    color: #555;
+    font-size: 14px;
+    cursor: pointer;
+    outline: none;
+}
+
+.filtro select:focus {
+    box-shadow: 0 0 0 3px rgba(255, 255, 255, 0.35);
 }
 /* ===================================
    QUER AJUDAR
@@ -1022,3 +1264,4 @@ footer{
     }
 
 }
+ 
