@@ -50,7 +50,7 @@ header{
 
     font-size: 45px;
     font-weight: normal;
-    -webkit-text-stroke: 1.5px #8474ec, rgb(215, 123, 241), rgb(163, 247, 169);
+    -webkit-text-stroke: 1.5px #aa9fef, rgb(215, 123, 241), rgb(163, 247, 169);
 }
 
 /* MENU */
@@ -115,13 +115,6 @@ header{
 .home-header{
     background: linear-gradient(90deg, #5658ce);
 }
-/* ===================================
-   QUER ADOTAR
-=================================== */
-/* =========================================
-   QUER ADOTAR - PETSZY
-   COR PRINCIPAL: #b452f5
-========================================= */
 
 
 /* FUNDO DA PÁGINA */
@@ -134,10 +127,6 @@ body.adotar {
 
 }
 
-
-/* =========================================
-   TÍTULO
-========================================= */
 
 .adotar > h2 {
 
@@ -167,10 +156,6 @@ body.adotar {
 }
 
 
-/* =========================================
-   GRID
-========================================= */
-
 .animais-container {
     width: 1000px;
     max-width: 90%;
@@ -183,10 +168,6 @@ body.adotar {
 }
 
 
-/* =========================================
-   ANIMAL
-========================================= */
-
 .animal {
     position: relative;
 
@@ -194,10 +175,6 @@ body.adotar {
     height: 190px;
 }
 
-
-/* =========================================
-   FOTO PEQUENA
-========================================= */
 
 .foto {
     width: 210px;
@@ -269,8 +246,6 @@ body.adotar {
     transition: all 0.3s ease;
 }
 
-
-/* APARECE AO PASSAR O MOUSE */
 
 .animal:hover .popup {
 
@@ -390,7 +365,7 @@ body.adotar {
 
 /* CABEÇALHO */
 .adotar-header {
-    background-color: #7d2bb8 !important;
+    background-color: #51abc6 !important;
 }
 
 /* FILTROS */
@@ -2793,4 +2768,1893 @@ body.home .home-header .menu-hamburguer {
         font-size: 27px;
     }
 
+}
+
+/* ==========================================================
+   PETSZY — VISUAL Y2K / RESPONSIVO
+   ==========================================================
+   IMPORTANTE:
+   - Esta parte altera APENAS o visual.
+   - A estrutura, classes, IDs e funcionamento existentes
+     foram preservados.
+   - Troque apenas os nomes dos arquivos de fundo abaixo
+     pelas suas imagens, se os nomes forem diferentes.
+   ========================================================== */
+
+/* ---------- PALETA Y2K POR PÁGINA ---------- */
+
+:root{
+    --y2k-blue: #62d8ff;
+    --y2k-blue-dark: #1769a8;
+    --y2k-purple: #c98cff;
+    --y2k-pink: #ff8fdc;
+    --y2k-lime: #caff70;
+    --y2k-cyan: #9ffff5;
+    --y2k-white: #ffffff;
+    --y2k-ink: #18345c;
+    --y2k-shadow: rgba(18, 63, 112, .28);
+}
+
+/* ==========================================================
+   ESTILO GERAL
+   ========================================================== */
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    overflow-x: hidden;
+}
+
+img{
+    max-width: 100%;
+}
+
+/* ==========================================================
+   HOME — Y2K AZUL/CYAN
+   ========================================================== */
+
+body.home{
+    background: #9ddfff;
+    color: var(--y2k-ink);
+}
+
+body.home .home-header{
+    background: linear-gradient(135deg, #1596dd, #6bceff 55%, #b99cff);
+    border: 3px solid #fff;
+    box-shadow:
+        0 6px 0 #175d99,
+        0 12px 25px rgba(0, 80, 150, .28);
+    backdrop-filter: blur(12px);
+}
+
+body.home .home-header .logo{
+    color: #fff;
+    text-shadow:
+        2px 2px 0 #1769a8,
+        4px 4px 0 rgba(255,255,255,.55);
+}
+
+body.home .home-header .nav a{
+    background: rgba(255,255,255,.14);
+    border: 2px solid rgba(255,255,255,.7);
+    color: #fff;
+    text-shadow: 1px 1px 0 #1769a8;
+}
+
+body.home .home-header .nav a:hover{
+    background: #ff9de4;
+    color: #64247f;
+    border-color: #fff;
+}
+
+body.home section.home{
+    background:
+        linear-gradient(
+            135deg,
+            rgba(63, 185, 241, .72),
+            rgba(205, 157, 255, .64)
+        ),
+        url("img/bg-home.jpg");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+body.home .home-content{
+    background:
+        linear-gradient(
+            135deg,
+            rgba(255,255,255,.82),
+            rgba(196,242,255,.76)
+        );
+    border: 4px solid #fff;
+    box-shadow:
+        0 9px 0 #1769a8,
+        0 18px 35px rgba(26,87,130,.25),
+        inset 0 0 25px rgba(255,255,255,.75);
+}
+
+body.home .home-content h1,
+body.home .historia-texto h2,
+body.home .titulo-secao h2,
+body.home .adocao-conteudo h2{
+    text-shadow:
+        2px 2px 0 #fff,
+        4px 4px 0 #ff9ee4;
+}
+
+body.home .btn-home{
+    background: linear-gradient(135deg, #158fd0, #55dfff);
+    border: 3px solid #fff;
+    box-shadow:
+        0 5px 0 #14578d,
+        inset 0 0 12px rgba(255,255,255,.35);
+}
+
+body.home .btn-secundario{
+    background: linear-gradient(135deg, #ff8fdc, #c9a0ff);
+    color: #54256d;
+}
+
+body.home .historia{
+    background:
+        linear-gradient(135deg, #8edcff, #d4a9ff);
+    border-top: 5px solid #fff;
+}
+
+body.home .historia-destaque{
+    background: linear-gradient(145deg, #1596dd, #b477f0);
+    border: 4px solid #fff;
+    box-shadow:
+        0 8px 0 #70469f,
+        0 15px 25px rgba(30,80,130,.25);
+}
+
+body.home .patinha{
+    background: #ff9cdd;
+    color: #71316f;
+    box-shadow: 0 5px 0 #a34892;
+}
+
+body.home .missao{
+    background: linear-gradient(180deg, #b9efff, #e4c8ff);
+}
+
+body.home .card-missao,
+body.home .ajuda-card,
+body.home .cuidado{
+    background: linear-gradient(145deg, rgba(255,255,255,.96), rgba(216,248,255,.92));
+    border: 4px solid #fff;
+    box-shadow:
+        0 7px 0 #68aeda,
+        0 12px 20px rgba(30,105,145,.16);
+}
+
+body.home .icone{
+    background: linear-gradient(135deg, #72e4ff, #c29aff);
+    border: 4px solid #fff;
+    box-shadow: 0 5px 0 #5684ba;
+}
+
+body.home .como-ajudar{
+    background: linear-gradient(135deg, #76d9ff, #c88cff);
+    border-top: 5px solid #fff;
+}
+
+body.home .ajuda-icone{
+    background: linear-gradient(135deg, #ff91dc, #86eaff);
+    border: 4px solid #fff;
+}
+
+body.home .adocao-info{
+    background: linear-gradient(135deg, #b0eaff, #e2b8ff);
+}
+
+body.home .adocao-conteudo{
+    background: rgba(255,255,255,.88);
+    border: 4px solid #fff;
+    box-shadow: 0 8px 0 #9b67bf;
+}
+
+body.home .cuidados{
+    background: linear-gradient(180deg, #c6f3ff, #efd0ff);
+}
+
+body.home .chamada-home{
+    background: linear-gradient(135deg, #168ed0, #a66be4);
+    border-top: 5px solid #fff;
+}
+
+body.home .chamada-conteudo{
+    background: linear-gradient(135deg, #50c9ef, #d18bf0);
+    border: 4px solid #fff;
+    box-shadow: 0 9px 0 #60458e;
+}
+
+/* ==========================================================
+   ADOTAR — Y2K ROXO/ROSA
+   ========================================================== */
+
+body.adotar{
+    background:
+        linear-gradient(
+            135deg,
+            rgba(170, 84, 244, .78),
+            rgba(255, 133, 214, .62)
+        ),
+        url("img/bg-adotar.jpg");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-color: #b452f5;
+}
+
+body.adotar .adotar-header{
+    background: linear-gradient(135deg, #7b29ba, #d36cff, #ff8edb) !important;
+    border-bottom: 3px solid #fff;
+    box-shadow:
+        0 6px 0 #622090,
+        0 10px 25px rgba(71,26,110,.28);
+}
+
+body.adotar > h2{
+    color: #fff;
+    text-shadow:
+        3px 3px 0 #7431a0,
+        5px 5px 0 #ff9de3;
+}
+
+body.adotar .texto-adocao{
+    color: #fff;
+    text-shadow: 1px 1px 0 #7431a0;
+}
+
+body.adotar .animal{
+    filter: drop-shadow(0 7px 4px rgba(66,20,95,.22));
+}
+
+body.adotar .foto{
+    border: 5px solid #fff;
+    border-radius: 20px;
+    box-shadow:
+        0 6px 0 #7132a2,
+        0 10px 20px rgba(50,20,80,.25);
+}
+
+body.adotar .popup{
+    background: linear-gradient(145deg, #fff, #f6dfff);
+    border: 3px solid #fff;
+    border-radius: 18px;
+    box-shadow:
+        0 7px 0 #8c4ab1,
+        0 12px 25px rgba(50,20,80,.28);
+}
+
+body.adotar .popup h3,
+body.adotar .popup strong{
+    color: #a43bd1;
+}
+
+body.adotar .popup button{
+    background: linear-gradient(135deg, #a83cdd, #f27ccc);
+    border: 2px solid #fff;
+    box-shadow: 0 4px 0 #70238f;
+    border-radius: 12px;
+}
+
+body.adotar .popup button:hover{
+    background: #ff8fd9;
+}
+
+body.adotar .filtro select{
+    border: 3px solid #fff;
+    border-radius: 14px;
+    background: #fceaff;
+    color: #65367a;
+    box-shadow: 0 4px 0 #8d4cae;
+}
+
+body.adotar .filtro label{
+    text-shadow: 2px 2px 0 #7a2b9e;
+}
+
+/* ==========================================================
+   AJUDAR — Y2K VERDE/LILÁS
+   ========================================================== */
+
+.ajudar{
+    background:
+        linear-gradient(
+            135deg,
+            rgba(152, 255, 139, .78),
+            rgba(211, 165, 255, .66)
+        ),
+        url("img/bg-ajudar.jpg");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.ajudar .ajudar-header{
+    background: linear-gradient(135deg, #61d75a, #78e9c3, #bb8af5);
+    border-bottom: 3px solid #fff;
+    box-shadow:
+        0 6px 0 #439d68,
+        0 10px 25px rgba(35,100,65,.25);
+}
+
+.ajudar .nav a{
+    text-shadow: 1px 1px 0 #4b8f70;
+}
+
+.ajudar .nav a:hover{
+    color: #713d86;
+    background: #f2b5ff;
+    border-radius: 12px;
+}
+
+.ajudar .topo-frase h2{
+    color: #fff;
+    text-shadow:
+        3px 3px 0 #5b8e46,
+        5px 5px 0 #d891ef;
+}
+
+.ajudar .hero-ajuda{
+    background:
+        linear-gradient(
+            rgba(65, 42, 91, .45),
+            rgba(55, 126, 85, .35)
+        ),
+        url("img/bg-ajudar.jpg");
+    background-size: cover;
+    background-position: center;
+    border: 4px solid #fff;
+    box-shadow:
+        0 8px 0 #599b6d,
+        0 15px 25px rgba(0,0,0,.18);
+}
+
+.ajudar .logo-hero{
+    background: linear-gradient(135deg, #69d95b, #c790f4);
+    border: 3px solid #fff;
+    box-shadow: 0 5px 0 #5d7f5a;
+}
+
+.ajudar .logo-hero h1,
+.ajudar .titulo-hero,
+.ajudar .como-doar{
+    text-shadow:
+        3px 3px 0 #5b7048,
+        5px 5px 0 #f3a8ec;
+}
+
+.ajudar .card-ajuda{
+    background: linear-gradient(145deg, rgba(255,255,255,.96), rgba(240,222,255,.92));
+    border: 4px solid #fff;
+    border-radius: 28px;
+    box-shadow:
+        0 7px 0 #8b70aa,
+        0 13px 25px rgba(45,70,60,.18);
+}
+
+.ajudar .card-ajuda h1{
+    color: #7e4aa0;
+    text-shadow: 2px 2px 0 #c9ff9e;
+}
+
+.ajudar .btn-doar{
+    background: linear-gradient(135deg, #1c1c32, #8e4eb3);
+    border: 3px solid #fff;
+    box-shadow: 0 5px 0 #51305f;
+}
+
+.ajudar .balao{
+    background: #fdf7ff;
+    border: 3px solid #6d557b;
+    box-shadow: inset 0 0 15px rgba(205,151,232,.22);
+}
+
+.ajudar .pix-box{
+    background: #f4fff2;
+    border: 3px dashed #59a95f;
+}
+
+.ajudar .pix-box h3{
+    color: #47994f;
+}
+
+.ajudar .info-lateral{
+    background: linear-gradient(135deg, #70e4b4, #d19bfa);
+    border: 4px solid #fff;
+    box-shadow:
+        0 8px 0 #668c79,
+        0 15px 25px rgba(35,80,65,.2);
+}
+
+.ajudar .info-lateral p{
+    color: #294f49;
+}
+
+/* ==========================================================
+   PAGAMENTO
+   ========================================================== */
+
+.ajudar .caixa{
+    background: linear-gradient(145deg, #fff, #f2e4ff);
+    border: 4px solid #fff;
+    box-shadow:
+        0 8px 0 #8a63a8,
+        0 15px 30px rgba(40,60,55,.2);
+}
+
+.ajudar h1{
+    color: #76509a;
+    text-shadow: 2px 2px 0 #b7ff94;
+}
+
+.ajudar .valor{
+    background: linear-gradient(135deg, #66d85e, #b57de8);
+    border: 2px solid #fff;
+    box-shadow: 0 4px 0 #638a69;
+}
+
+.ajudar select{
+    border: 3px solid #c49bdc;
+    background: #fffaff;
+}
+
+.ajudar .btn-pagar{
+    background: linear-gradient(135deg, #202032, #8a4da9);
+    border: 3px solid #fff;
+    box-shadow: 0 5px 0 #51305f;
+}
+
+/* ==========================================================
+   LOGIN — Y2K AZUL BEBÊ / ROSA
+   ========================================================== */
+
+body.login{
+    background:
+        linear-gradient(
+            135deg,
+            rgba(152, 218, 255, .70),
+            rgba(255, 169, 227, .55)
+        ),
+        url("img/bg-login.jpg");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+body.login .container-login{
+    background: linear-gradient(
+        145deg,
+        rgba(255,255,255,.94),
+        rgba(226,245,255,.88)
+    );
+    border: 4px solid #fff;
+    border-radius: 30px;
+    box-shadow:
+        0 8px 0 #659ac5,
+        0 15px 35px rgba(60,100,140,.25),
+        inset 0 0 25px rgba(255,255,255,.8);
+    backdrop-filter: blur(8px);
+}
+
+body.login h1{
+    color: #5796cf;
+    text-shadow:
+        2px 2px 0 #fff,
+        4px 4px 0 #ff9edc;
+}
+
+body.login input{
+    background: rgba(255,255,255,.9);
+    border: 3px solid #a9ddff;
+    border-radius: 14px;
+    box-shadow: inset 0 2px 8px rgba(90,140,180,.12);
+}
+
+body.login input:focus{
+    border-color: #ff91d8;
+    box-shadow: 0 0 0 3px rgba(255,145,216,.2);
+}
+
+body.login button{
+    background: linear-gradient(135deg, #73cfff, #ca91ed);
+    border: 3px solid #fff;
+    border-radius: 14px;
+    box-shadow: 0 5px 0 #6c79ad;
+}
+
+body.login button:hover{
+    background: linear-gradient(135deg, #ff8fd7, #a7dfff);
+}
+
+body.login a{
+    color: #5e9bcd;
+}
+
+/* ==========================================================
+   FOOTER Y2K
+   ========================================================== */
+
+footer{
+    background: linear-gradient(135deg, #15284b, #693f82);
+    border-top: 4px solid #fff;
+    color: #eaf7ff;
+    box-shadow: inset 0 5px 15px rgba(255,255,255,.08);
+}
+
+/* ==========================================================
+   DETALHES Y2K
+   ========================================================== */
+
+body.home section.home::before,
+body.home section.home::after{
+    box-shadow:
+        inset 0 0 20px rgba(255,255,255,.22),
+        0 0 20px rgba(255,145,222,.15);
+}
+
+body.home .card-missao:hover,
+body.home .ajuda-card:hover,
+body.home .cuidado:hover,
+.ajudar .card-ajuda:hover{
+    transform: translateY(-6px) rotate(1deg);
+}
+
+/* ==========================================================
+   RESPONSIVO — TABLETS E TELAS MENORES
+   ========================================================== */
+
+@media (max-width: 900px){
+
+    body.home .home-header{
+        width: calc(100% - 24px);
+        left: 12px;
+        padding: 0 18px;
+    }
+
+    body.home .home-header .nav{
+        gap: 5px;
+    }
+
+    body.home .home-header .nav a{
+        padding: 8px 9px;
+        font-size: 12px;
+    }
+
+    body.home .historia{
+        flex-direction: column;
+        text-align: center;
+    }
+
+    body.home .historia-texto{
+        width: 100%;
+        max-width: 700px;
+    }
+
+    body.home .cards-missao,
+    body.home .ajuda-cards{
+        grid-template-columns: repeat(2, minmax(210px, 1fr));
+    }
+
+    body.home .cuidados-lista{
+        grid-template-columns: repeat(2, minmax(180px, 1fr));
+    }
+
+    .animais-container{
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        width: 95%;
+        gap: 40px 25px;
+    }
+
+    .animal{
+        margin: 0 auto;
+    }
+
+    .container-ajuda{
+        padding-left: 4%;
+        padding-right: 4%;
+    }
+
+    .hero-ajuda{
+        min-height: 240px;
+    }
+
+    .nav{
+        gap: 15px;
+    }
+}
+
+/* ==========================================================
+   RESPONSIVO — CELULARES
+   ========================================================== */
+
+@media (max-width: 700px){
+
+    body{
+        overflow-x: hidden;
+    }
+
+    /* HOME HEADER */
+
+    body.home .home-header{
+        height: 62px;
+        top: 10px;
+        width: calc(100% - 20px);
+        left: 10px;
+        padding: 0 14px;
+        border-radius: 18px;
+    }
+
+    body.home .home-header .logo{
+        font-size: 27px;
+    }
+
+    body.home .home-header .menu-hamburguer{
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+        cursor: pointer;
+    }
+
+    body.home .home-header .menu-hamburguer .linha{
+        width: 26px;
+        height: 3px;
+        background: #fff;
+        border-radius: 4px;
+        box-shadow: 1px 1px 0 #1769a8;
+    }
+
+    body.home .home-header .nav{
+        display: none;
+        position: absolute;
+        top: 70px;
+        right: 0;
+        width: min(220px, calc(100vw - 30px));
+        padding: 10px;
+        flex-direction: column;
+        align-items: stretch;
+        gap: 4px;
+        background: linear-gradient(135deg, #168fd0, #b17ce8);
+        border: 3px solid #fff;
+        border-radius: 18px;
+        box-shadow: 0 6px 0 #175d99;
+    }
+
+    body.home .home-header .nav.ativo{
+        display: flex;
+    }
+
+    body.home .home-header .nav a{
+        font-size: 14px;
+        padding: 11px;
+    }
+
+    /* HOME */
+
+    body.home section.home{
+        min-height: auto;
+        padding: 120px 15px 65px;
+        background-attachment: scroll;
+    }
+
+    body.home .home-content{
+        padding: 27px 17px;
+        border-radius: 27px;
+    }
+
+    body.home .home-content h1{
+        font-size: clamp(30px, 9vw, 40px);
+    }
+
+    body.home .home-content p{
+        font-size: 14px;
+    }
+
+    body.home .home-buttons{
+        flex-direction: column;
+    }
+
+    body.home .btn-home{
+        width: 100%;
+        max-width: 290px;
+    }
+
+    body.home .historia,
+    body.home .missao,
+    body.home .como-ajudar,
+    body.home .cuidados,
+    body.home .adocao-info{
+        padding: 60px 15px;
+    }
+
+    body.home .historia-texto h2,
+    body.home .titulo-secao h2,
+    body.home .adocao-conteudo h2,
+    body.home .chamada-home h2{
+        font-size: clamp(27px, 8vw, 34px);
+    }
+
+    body.home .cards-missao,
+    body.home .ajuda-cards,
+    body.home .cuidados-lista{
+        grid-template-columns: 1fr;
+    }
+
+    body.home .card-missao,
+    body.home .ajuda-card,
+    body.home .cuidado{
+        width: 100%;
+        max-width: 340px;
+        margin: 0 auto;
+    }
+
+    body.home .adocao-conteudo,
+    body.home .chamada-conteudo{
+        padding: 28px 18px;
+        border-radius: 27px;
+    }
+
+    /* ADOTAR */
+
+    body.adotar{
+        background-attachment: scroll;
+    }
+
+    body.adotar > h2{
+        font-size: 28px;
+        padding: 0 15px;
+    }
+
+    .texto-adocao{
+        padding: 0 15px;
+        line-height: 1.6;
+    }
+
+    .animais-container{
+        width: 100%;
+        max-width: 100%;
+        grid-template-columns: 1fr;
+        gap: 30px;
+        padding: 0 15px;
+    }
+
+    .animal{
+        width: min(100%, 300px);
+        height: auto;
+        min-height: 190px;
+        margin: 0 auto;
+    }
+
+    .foto{
+        width: 210px;
+        max-width: 72vw;
+        height: 170px;
+    }
+
+    .popup{
+        left: 75px;
+        width: min(205px, 62vw);
+    }
+
+    .filtros{
+        flex-direction: column;
+        gap: 12px;
+        padding: 0 15px;
+    }
+
+    .filtro{
+        width: 100%;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    /* AJUDAR */
+
+    .ajudar{
+        background-attachment: scroll;
+    }
+
+    .ajudar .ajudar-header{
+        height: 65px;
+    }
+
+    .ajudar .menu-hamburguer{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .ajudar .nav{
+        display: none;
+        position: absolute;
+        top: 65px;
+        right: 5%;
+        width: min(220px, calc(100vw - 30px));
+        flex-direction: column;
+        gap: 4px;
+        padding: 12px;
+        background: linear-gradient(135deg, #65d85b, #bc8bf0);
+        border: 3px solid #fff;
+        border-radius: 18px;
+        box-shadow: 0 6px 0 #568064;
+    }
+
+    .ajudar .nav.ativo{
+        display: flex;
+    }
+
+    .ajudar .nav a{
+        padding: 10px;
+    }
+
+    .topo-frase{
+        padding-top: 90px;
+    }
+
+    .topo-frase h2{
+        font-size: 28px;
+    }
+
+    .hero-ajuda{
+        width: calc(100% - 20px);
+        margin: 0 10px;
+        min-height: 330px;
+        padding: 25px 15px;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        gap: 20px;
+        border-radius: 25px;
+    }
+
+    .titulo-hero{
+        font-size: 29px;
+    }
+
+    .como-doar{
+        font-size: 36px;
+        line-height: 38px;
+    }
+
+    .container-ajuda{
+        flex-direction: column;
+        align-items: center;
+        padding: 40px 15px 60px;
+    }
+
+    .card-ajuda,
+    .info-lateral{
+        width: 100%;
+        max-width: 360px;
+        margin: 0 auto;
+    }
+
+    .info-lateral{
+        padding: 30px 20px;
+    }
+
+    /* PAGAMENTO */
+
+    .ajudar .caixa{
+        width: calc(100% - 30px);
+        max-width: 400px;
+        padding: 25px 18px;
+    }
+
+    /* LOGIN */
+
+    body.login{
+        min-height: 100svh;
+        padding: 90px 15px 30px;
+        background-attachment: scroll;
+    }
+
+    body.login .container-login{
+        width: 100%;
+        max-width: 400px;
+        padding: 28px 20px;
+    }
+}
+
+/* ==========================================================
+   CELULARES MUITO PEQUENOS
+   ========================================================== */
+
+@media (max-width: 430px){
+
+    body.home .home-header .logo{
+        font-size: 24px;
+    }
+
+    body.home .home-content h1{
+        font-size: 29px;
+    }
+
+    body.home .home-content p{
+        font-size: 13px;
+    }
+
+    body.home .home-subtitulo{
+        font-size: 8px;
+        letter-spacing: .7px;
+    }
+
+    .popup{
+        left: 55px;
+        width: 190px;
+    }
+
+    .foto{
+        width: 195px;
+        height: 160px;
+    }
+
+    .ajudar .logo{
+        font-size: 28px;
+    }
+
+    .topo-frase h2{
+        font-size: 25px;
+    }
+
+    .logo-hero h1{
+        font-size: 34px;
+    }
+
+    .titulo-hero{
+        font-size: 25px;
+    }
+
+    .como-doar{
+        font-size: 31px;
+        line-height: 34px;
+    }
+}
+
+/* ==========================================================
+   TELAS GRANDES — NÃO DEIXA O LAYOUT ESTICAR DEMAIS
+   ========================================================== */
+
+@media (min-width: 1400px){
+
+    body.home .home-content{
+        max-width: 1000px;
+    }
+
+    body.home .historia,
+    body.home .missao,
+    body.home .como-ajudar,
+    body.home .adocao-info,
+    body.home .cuidados{
+        padding-left: 12%;
+        padding-right: 12%;
+    }
+}
+
+
+/* -----------------------------
+   FONTE PADRÃO
+   ----------------------------- */
+
+html,
+body,
+button,
+input,
+select,
+textarea {
+    font-family: 'Poppins', sans-serif !important;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+/* Logo: mesma fonte em todas as páginas */
+.logo,
+body.home .home-header .logo,
+.ajudar-header .logo,
+.header-petszy .logo {
+    font-family: 'Fascinate Inline', cursive !important;
+    font-weight: normal !important;
+    letter-spacing: 0;
+}
+
+/* ==========================================================
+   CABEÇALHO TODAS AS PÁGINAS
+   ========================================================== */
+
+header,
+.home-header,
+.ajudar-header,
+.adotar-header,
+.header-petszy {
+    width: calc(100% - 40px) !important;
+    height: 72px !important;
+
+    position: fixed !important;
+    top: 20px !important;
+    left: 20px !important;
+
+    display: flex !important;
+    align-items: center !important;
+    justify-content: space-between !important;
+
+    padding: 0 28px !important;
+
+    background: linear-gradient(135deg, #417d93) !important;
+
+    border: 3px solid #ffffff !important;
+    border-radius: 25px !important;
+
+    box-shadow:
+        0 7px 0 #2ca0a058,
+        0 12px 25px rgba(34, 133, 187, 0.3) !important;
+
+    backdrop-filter: blur(10px);
+    z-index: 9999 !important;
+}
+
+/* Logo padronizado */
+
+header .logo,
+.home-header .logo,
+.ajudar-header .logo,
+.header-petszy .logo {
+    color: #ffffff !important;
+    font-size: 40px !important;
+    line-height: 1 !important;
+    text-decoration: none !important;
+
+    text-shadow:
+        3px 3px 0 #5773ab,
+        0 0 10px rgba(255,255,255,.55) !important;
+
+    transition: .2s ease;
+}
+
+header .logo:hover,
+.home-header .logo:hover,
+.ajudar-header .logo:hover,
+.header-petszy .logo:hover {
+    transform: rotate(-2deg) scale(1.04);
+}
+
+/* ==========================================================
+   MENU PADRÃO
+   ========================================================== */
+
+header .nav,
+.home-header .nav,
+.ajudar-header .nav,
+.header-petszy .nav {
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    gap: 10px !important;
+}
+
+header .nav a,
+.home-header .nav a,
+.ajudar-header .nav a,
+.header-petszy .nav a {
+    display: inline-flex !important;
+    align-items: center;
+    justify-content: center;
+
+    padding: 9px 15px !important;
+
+    color: #ffffff !important;
+    background: rgba(255,255,255,.08) !important;
+
+    border: 2px solid transparent;
+    border-radius: 15px !important;
+
+    font-family: 'Poppins', sans-serif !important;
+    font-size: 15px !important;
+    font-weight: 700 !important;
+
+    text-decoration: none !important;
+
+    transition: .2s ease !important;
+}
+
+header .nav a:hover,
+.home-header .nav a:hover,
+.ajudar-header .nav a:hover,
+.header-petszy .nav a:hover {
+    color: #54227d !important;
+    background: #ffffff !important;
+    border-color: #ffffff !important;
+
+    transform: translateY(-2px) !important;
+
+    box-shadow:
+        0 4px 0 #5b2ca0 !important;
+}
+
+/* ==========================================================
+   FUNDO DE CADA PÁGINA
+   ========================================================== */
+
+/*
+   Troque somente os nomes dos arquivos abaixo pelas imagens
+   que você criou, caso os nomes sejam diferentes.
+*/
+
+/* HOME */
+body.home {
+    background-color: #9ddfff !important;
+    font-family: 'Poppins', sans-serif !important;
+}
+
+/* QUER ADOTAR */
+body.adotar {
+    background:
+        linear-gradient(rgba(175, 109, 188, 0.72), rgba(204, 136, 240, 0.72)),
+        url("img/bg-adotar.jpg") center / cover fixed !important;
+    background-color: #b452f5 !important;
+    font-family: 'Poppins', sans-serif !important;
+}
+
+/* QUER AJUDAR */
+body.ajudar,
+.ajudar {
+    font-family: 'Poppins', sans-serif !important;
+    background:
+        linear-gradient(rgba(126,255,184,.70), rgba(210,166,255,.72)),
+        url("img/bg-ajudar.jpg") center / cover fixed !important;
+}
+
+/* LOGIN */
+body.login,
+.login {
+    font-family: 'Poppins', sans-serif !important;
+}
+
+/* ==========================================================
+   HOME 
+   ========================================================== */
+
+body.home section.home {
+    background:
+        linear-gradient(
+            180deg,
+            rgba(72, 179, 239, .60),
+            rgba(226, 126, 255, .58)
+        ),
+        url("img/bg-home.jpg") center / cover no-repeat !important;
+}
+
+/* ==========================================================
+   ADOTAR 
+   ========================================================== */
+
+body.adotar .adotar > h2,
+body.adotar h2 {
+    font-family: 'Poppins', sans-serif !important;
+    font-weight: 800;
+    text-shadow: 2px 2px 0 #7b31a8;
+}
+
+body.adotar .texto-adocao {
+    font-family: 'Poppins', sans-serif !important;
+}
+
+body.adotar .animal .foto {
+    border: 4px solid #ffffff !important;
+    border-radius: 20px !important;
+
+    box-shadow:
+        5px 5px 0 #7b31a8,
+        0 10px 25px rgba(53, 12, 75, .25) !important;
+}
+
+body.adotar .popup {
+    border: 3px solid #ffffff !important;
+    border-radius: 20px !important;
+
+    box-shadow:
+        6px 6px 0 #7b31a8,
+        0 12px 25px rgba(53,12,75,.25) !important;
+}
+
+body.adotar .popup h3,
+body.adotar .popup strong {
+    color: #9b3de0 !important;
+}
+
+body.adotar .popup button {
+    background: linear-gradient(135deg, #807297, #8d679c) !important;
+    border: 2px solid #ffffff !important;
+    border-radius: 13px !important;
+
+    box-shadow: 0 4px 0 #682a98;
+}
+
+body.adotar .popup button:hover {
+    background: #ff74db !important;
+}
+
+/* Filtros */
+body.adotar .filtro select {
+    border: 3px solid #ffffff !important;
+    border-radius: 14px !important;
+    box-shadow: 0 4px 0 #7b31a8;
+}
+
+/* ==========================================================
+   AJUDAR — PADRÃO Y2K
+   ========================================================== */
+
+body.ajudar .card-ajuda,
+body.ajudar .info-lateral,
+body.ajudar .balao,
+body.ajudar .pix-box,
+body.ajudar .caixa {
+    border: 3px solid #ffffff !important;
+}
+
+body.ajudar .card-ajuda {
+    border-radius: 25px !important;
+
+    box-shadow:
+        6px 6px 0 #7e5ab4,
+        0 12px 25px rgba(53, 35, 80, .18) !important;
+}
+
+body.ajudar .btn-doar,
+body.ajudar .btn-pagar,
+body.ajudar .valor {
+    border: 3px solid #ffffff !important;
+    border-radius: 15px !important;
+
+    background: linear-gradient(135deg, #8d4dff, #e85cff) !important;
+
+    box-shadow: 0 4px 0 #63318e;
+}
+
+body.ajudar .btn-doar:hover,
+body.ajudar .btn-pagar:hover,
+body.ajudar .valor:hover {
+    transform: translateY(2px);
+}
+
+body.ajudar .info-lateral {
+    border-radius: 28px !important;
+}
+
+/* ==========================================================
+   LOGIN — MESMO VISUAL
+   ========================================================== */
+
+.login {
+    background:
+        linear-gradient(
+            rgba(159, 222, 255, .72),
+            rgba(235, 161, 255, .70)
+        ),
+        url("img/bg-login.jpg") center / cover no-repeat !important;
+}
+
+.container-login {
+    border: 4px solid #ffffff !important;
+    border-radius: 28px !important;
+
+    box-shadow:
+        7px 7px 0 #7543a6,
+        0 15px 30px rgba(65, 31, 90, .25) !important;
+}
+
+.container-login h1 {
+    font-family: 'Poppins', sans-serif !important;
+    color: #7a42c7 !important;
+    text-shadow: 2px 2px 0 #dff7ff;
+}
+
+.container-login input {
+    border: 3px solid #d9b5ff !important;
+    border-radius: 14px !important;
+    font-family: 'Poppins', sans-serif !important;
+}
+
+.container-login input:focus {
+    border-color: #8c54e8 !important;
+    box-shadow: 0 0 0 3px rgba(140,84,232,.15);
+}
+
+.container-login button {
+    border: 3px solid #ffffff !important;
+    border-radius: 15px !important;
+
+    background: linear-gradient(135deg, #65cfff, #bc68ff) !important;
+
+    box-shadow: 0 4px 0 #6c3c9e;
+}
+
+.container-login button:hover {
+    background: linear-gradient(135deg, #83dcff, #d27bff) !important;
+}
+
+.container-login a {
+    color: #7540b5 !important;
+}
+
+/* ==========================================================
+   RESPONSIVO — MESMO CABEÇALHO EM TODAS AS PÁGINAS
+   ========================================================== */
+
+@media (max-width: 900px) {
+
+    header,
+    .home-header,
+    .ajudar-header,
+    .adotar-header,
+    .header-petszy {
+        width: calc(100% - 30px) !important;
+        left: 15px !important;
+        padding: 0 20px !important;
+    }
+
+    header .logo,
+    .home-header .logo,
+    .ajudar-header .logo,
+    .header-petszy .logo {
+        font-size: 32px !important;
+    }
+
+    header .nav,
+    .home-header .nav,
+    .ajudar-header .nav,
+    .header-petszy .nav {
+        gap: 5px !important;
+    }
+
+    header .nav a,
+    .home-header .nav a,
+    .ajudar-header .nav a,
+    .header-petszy .nav a {
+        padding: 8px 10px !important;
+        font-size: 13px !important;
+    }
+
+    .animais-container {
+        width: 90%;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 35px 25px;
+    }
+
+    .animal {
+        margin: 0 auto;
+    }
+
+    .container-login,
+    .caixa {
+        width: min(90%, 400px);
+    }
+
+    .container-ajuda {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .card-ajuda {
+        width: min(100%, 340px);
+    }
+}
+
+/* ==========================================================
+   CELULAR
+   ========================================================== */
+
+@media (max-width: 700px) {
+
+    header,
+    .home-header,
+    .ajudar-header,
+    .adotar-header,
+    .header-petszy {
+        height: 65px !important;
+        top: 12px !important;
+        width: calc(100% - 24px) !important;
+        left: 12px !important;
+
+        border-radius: 20px !important;
+        padding: 0 15px !important;
+    }
+
+    header .logo,
+    .home-header .logo,
+    .ajudar-header .logo,
+    .header-petszy .logo {
+        font-size: 27px !important;
+    }
+
+    /*
+       Mantém o hambúrguer que já existe no projeto.
+       Não cria nem remove funcionalidade.
+    */
+
+    body.home .home-header .nav,
+    .ajudar-header .nav {
+        position: absolute !important;
+        top: 70px !important;
+        right: 0 !important;
+
+        width: 210px !important;
+
+        padding: 10px !important;
+
+        flex-direction: column !important;
+        align-items: stretch !important;
+        gap: 3px !important;
+
+        background: linear-gradient(135deg, #8d4dff, #e75cff) !important;
+
+        border: 3px solid #ffffff !important;
+        border-radius: 20px !important;
+
+        box-shadow: 0 6px 0 #5b2ca0 !important;
+    }
+
+    body.home .home-header .nav a,
+    .ajudar-header .nav a {
+        padding: 12px !important;
+        font-size: 14px !important;
+    }
+
+    /* Páginas sem hambúrguer: menu pode quebrar sem sair da tela */
+    body.adotar .nav,
+    .header-petszy .nav {
+        flex-wrap: wrap !important;
+        justify-content: flex-end !important;
+        max-width: 65%;
+    }
+
+    body.adotar .nav a,
+    .header-petszy .nav a {
+        font-size: 12px !important;
+        padding: 7px 8px !important;
+    }
+
+    body.home section.home {
+        padding: 110px 15px 60px !important;
+    }
+
+    body.home .home-content {
+        padding: 28px 18px !important;
+        border-radius: 28px !important;
+    }
+
+    body.home .home-content h1 {
+        font-size: 34px !important;
+    }
+
+    body.home .home-content p {
+        font-size: 14px !important;
+    }
+
+    body.home .historia,
+    body.home .missao,
+    body.home .como-ajudar,
+    body.home .adocao-info,
+    body.home .cuidados {
+        padding-left: 20px !important;
+        padding-right: 20px !important;
+    }
+
+    body.home .historia {
+        flex-direction: column !important;
+        text-align: center !important;
+    }
+
+    body.home .historia-texto {
+        width: 100% !important;
+    }
+
+    body.home .cards-missao,
+    body.home .ajuda-cards,
+    body.home .cuidados-lista {
+        grid-template-columns: 1fr !important;
+    }
+
+    .animais-container {
+        grid-template-columns: 1fr !important;
+    }
+
+    .animal {
+        width: 260px;
+        max-width: 100%;
+    }
+
+    .foto {
+        width: 210px;
+        max-width: 100%;
+    }
+
+    .popup {
+        left: 80px;
+        max-width: calc(100vw - 100px);
+    }
+
+    .filtros {
+        flex-direction: column;
+        gap: 12px;
+    }
+
+    .hero-ajuda {
+        flex-direction: column !important;
+        text-align: center !important;
+    }
+
+    .container-ajuda {
+        padding: 35px 15px 55px !important;
+    }
+
+    .caixa,
+    .container-login {
+        width: calc(100% - 30px) !important;
+        padding: 28px 18px !important;
+    }
+}
+
+/* ==========================================================
+   CELULARES PEQUENOS
+   ========================================================== */
+
+@media (max-width: 430px) {
+
+    header,
+    .home-header,
+    .ajudar-header,
+    .adotar-header,
+    .header-petszy {
+        padding: 0 12px !important;
+    }
+
+    header .logo,
+    .home-header .logo,
+    .ajudar-header .logo,
+    .header-petszy .logo {
+        font-size: 23px !important;
+    }
+
+    body.adotar .nav,
+    .header-petszy .nav {
+        max-width: 62%;
+    }
+
+    body.adotar .nav a,
+    .header-petszy .nav a {
+        font-size: 10px !important;
+        padding: 6px !important;
+    }
+
+    body.home .home-content h1 {
+        font-size: 29px !important;
+    }
+
+    body.home .home-content p {
+        font-size: 13px !important;
+    }
+
+    .popup {
+        left: 50px;
+        width: 190px;
+    }
+
+    .foto {
+        width: 195px;
+        height: 160px;
+    }
+
+    .card-ajuda {
+        width: 100% !important;
+    }
+}
+
+
+
+/* ==========================================================
+   PETSZY — AJUSTE FINAL
+   MENU HAMBÚRGUER PADRONIZADO + FUNDOS ENVIADOS
+   ========================================================== */
+
+/* -----------------------------
+   FUNDOS DAS PÁGINAS
+   ----------------------------- */
+
+/* HOME — imagem azul */
+body.home section.home {
+    background:
+        url("img/fundo-home.png") center center / cover no-repeat !important;
+}
+
+/* QUER ADOTAR — imagem roxa */
+body.adotar {
+    background:
+        url("img/fundo-adotar.png") center center / cover no-repeat fixed !important;
+    background-color: #a878ff !important;
+}
+
+/* QUER AJUDAR — imagem verde */
+body.ajudar,
+.ajudar {
+    background:
+        url("img/fundo-ajudar.png") center center / cover no-repeat fixed !important;
+    background-color: #b9f4b4 !important;
+}
+
+/* -----------------------------
+   MENU HAMBÚRGUER — PADRÃO ÚNICO
+   ----------------------------- */
+
+/* O botão fica sempre no canto direito do cabeçalho */
+header .menu-hamburguer,
+.home-header .menu-hamburguer,
+.ajudar-header .menu-hamburguer,
+.adotar-header .menu-hamburguer,
+.header-petszy .menu-hamburguer {
+    display: none;
+    width: 42px !important;
+    height: 42px !important;
+
+    flex-shrink: 0;
+
+    align-items: center !important;
+    justify-content: center !important;
+    flex-direction: column !important;
+
+    gap: 5px !important;
+
+    margin-left: auto !important;
+    padding: 7px !important;
+
+    cursor: pointer;
+
+    background: rgba(255,255,255,.16) !important;
+
+    border: 2px solid #ffffff !important;
+    border-radius: 13px !important;
+
+    box-shadow:
+        0 4px 0 #5b2ca0,
+        0 0 12px rgba(255,255,255,.25) !important;
+
+    transition: .2s ease !important;
+}
+
+header .menu-hamburguer:hover,
+.home-header .menu-hamburguer:hover,
+.ajudar-header .menu-hamburguer:hover,
+.adotar-header .menu-hamburguer:hover,
+.header-petszy .menu-hamburguer:hover {
+    background: #ffffff !important;
+    transform: translateY(-1px);
+}
+
+/* As três linhas são sempre iguais */
+header .menu-hamburguer .linha,
+.home-header .menu-hamburguer .linha,
+.ajudar-header .menu-hamburguer .linha,
+.adotar-header .menu-hamburguer .linha,
+.header-petszy .menu-hamburguer .linha {
+    display: block !important;
+
+    width: 24px !important;
+    height: 3px !important;
+
+    margin: 0 !important;
+
+    background: #ffffff !important;
+
+    border-radius: 10px !important;
+
+    transition: .2s ease !important;
+}
+
+header .menu-hamburguer:hover .linha,
+.home-header .menu-hamburguer:hover .linha,
+.ajudar-header .menu-hamburguer:hover .linha,
+.adotar-header .menu-hamburguer:hover .linha,
+.header-petszy .menu-hamburguer:hover .linha {
+    background: #7a3fb4 !important;
+}
+
+/* -----------------------------
+   MENU ABERTO — MESMO PADRÃO
+   ----------------------------- */
+
+@media (max-width: 700px) {
+
+    header .menu-hamburguer,
+    .home-header .menu-hamburguer,
+    .ajudar-header .menu-hamburguer,
+    .adotar-header .menu-hamburguer,
+    .header-petszy .menu-hamburguer {
+        display: flex !important;
+    }
+
+    /*
+       O menu aberto sai diretamente abaixo do cabeçalho,
+       sempre alinhado ao canto direito.
+    */
+    header .nav,
+    .home-header .nav,
+    .ajudar-header .nav,
+    .adotar-header .nav,
+    .header-petszy .nav {
+        position: absolute !important;
+
+        top: 70px !important;
+        right: 0 !important;
+        left: auto !important;
+
+        width: 215px !important;
+        max-width: calc(100vw - 35px) !important;
+
+        display: none !important;
+
+        flex-direction: column !important;
+        align-items: stretch !important;
+        justify-content: flex-start !important;
+
+        gap: 4px !important;
+
+        padding: 10px !important;
+
+        background: linear-gradient(
+            135deg,
+            #8d4dff,
+            #c65cff,
+            #65d8ff
+        ) !important;
+
+        border: 3px solid #ffffff !important;
+        border-radius: 18px !important;
+
+        box-shadow:
+            0 6px 0 #5b2ca0,
+            0 12px 25px rgba(60, 25, 90, .28) !important;
+
+        z-index: 10000 !important;
+    }
+
+    /* Classe já usada pelo JavaScript do projeto */
+    header .nav.ativo,
+    .home-header .nav.ativo,
+    .ajudar-header .nav.ativo,
+    .adotar-header .nav.ativo,
+    .header-petszy .nav.ativo {
+        display: flex !important;
+    }
+
+    header .nav a,
+    .home-header .nav a,
+    .ajudar-header .nav a,
+    .adotar-header .nav a,
+    .header-petszy .nav a {
+        width: 100% !important;
+
+        justify-content: flex-start !important;
+
+        padding: 12px 14px !important;
+
+        font-family: 'Poppins', sans-serif !important;
+        font-size: 14px !important;
+        font-weight: 700 !important;
+
+        color: #ffffff !important;
+        background: rgba(255,255,255,.10) !important;
+
+        border: 2px solid transparent !important;
+        border-radius: 12px !important;
+
+        box-sizing: border-box !important;
+    }
+
+    header .nav a:hover,
+    .home-header .nav a:hover,
+    .ajudar-header .nav a:hover,
+    .adotar-header .nav a:hover,
+    .header-petszy .nav a:hover {
+        color: #69358d !important;
+        background: #ffffff !important;
+        border-color: #ffffff !important;
+
+        transform: translateX(2px) !important;
+
+        box-shadow: none !important;
+    }
+
+    /* Cabeçalho permanece em uma única linha no celular */
+    header,
+    .home-header,
+    .ajudar-header,
+    .adotar-header,
+    .header-petszy {
+        flex-direction: row !important;
+        justify-content: space-between !important;
+        align-items: center !important;
+    }
+
+    header .logo,
+    .home-header .logo,
+    .ajudar-header .logo,
+    .adotar-header .logo,
+    .header-petszy .logo {
+        margin-right: auto !important;
+    }
+
+    /* Espaço para o botão no canto */
+    header .menu-hamburguer,
+    .home-header .menu-hamburguer,
+    .ajudar-header .menu-hamburguer,
+    .adotar-header .menu-hamburguer,
+    .header-petszy .menu-hamburguer {
+        margin-left: 10px !important;
+    }
+}
+
+/* -----------------------------
+   CELULARES MUITO PEQUENOS
+   ----------------------------- */
+
+@media (max-width: 430px) {
+
+    header,
+    .home-header,
+    .ajudar-header,
+    .adotar-header,
+    .header-petszy {
+        width: calc(100% - 20px) !important;
+        left: 10px !important;
+        top: 10px !important;
+
+        padding: 0 10px !important;
+    }
+
+    header .logo,
+    .home-header .logo,
+    .ajudar-header .logo,
+    .adotar-header .logo,
+    .header-petszy .logo {
+        font-size: 23px !important;
+    }
+
+    header .menu-hamburguer,
+    .home-header .menu-hamburguer,
+    .ajudar-header .menu-hamburguer,
+    .adotar-header .menu-hamburguer,
+    .header-petszy .menu-hamburguer {
+        width: 40px !important;
+        height: 40px !important;
+    }
+
+    header .nav,
+    .home-header .nav,
+    .ajudar-header .nav,
+    .adotar-header .nav,
+    .header-petszy .nav {
+        top: 66px !important;
+        width: 205px !important;
+    }
+}
+
+/* -----------------------------
+   EVITA QUE O FUNDO SE DESLOQUE
+   DE FORMA ESTRANHA NO CELULAR
+   ----------------------------- */
+
+@media (max-width: 700px) {
+    body.adotar,
+    body.ajudar,
+    .ajudar {
+        background-attachment: scroll !important;
+    }
 }
